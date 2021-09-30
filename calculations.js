@@ -13,3 +13,7 @@ export function subtract(num3, num4){
 export function multiply(num5, num6){
     return num5 * num6;
 }
+
+export function divide(num7, num8){
+    return num7 / num8;
+}

@@ -90,3 +90,28 @@ h1 {
     padding-right: 10px;
     padding-left: 5px;
 }
+
+.divide {
+    background-color: orange;
+    padding: 20px;
+    color: black;
+    width: 75%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 85px;
+}
+
+.divide h2 {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    font-size: 2rem;
+    margin-top: 0px;
+}
+
+#divide-answer {
+    background-color: orange;
+    color: black;
+    padding-right: 10px;
+    padding-left: 5px;
+}
