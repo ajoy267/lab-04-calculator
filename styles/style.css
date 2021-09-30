@@ -115,3 +115,28 @@ h1 {
     padding-right: 10px;
     padding-left: 5px;
 }
+
+.modulo {
+    background-color: orange;
+    padding: 20px;
+    color: black;
+    width: 75%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 85px;
+}
+
+.modulo h2 {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    font-size: 2rem;
+    margin-top: 0px;
+}
+
+#modulo-answer {
+    background-color: orange;
+    color: black;
+    padding-right: 10px;
+    padding-left: 5px;
+}

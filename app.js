@@ -16,6 +16,10 @@ const divideInput1 = document.getElementById('divide-input-1');
 const divideInput2 = document.getElementById('divide-input-2');
 const divideButton = document.getElementById('divide-btn');
 const divideAnswer = document.getElementById('divide-answer');
+const moduloInput1 = document.getElementById('modulo-input-1');
+const moduloInput2 = document.getElementById('modulo-input-2');
+const moduloButton = document.getElementById('modulo-btn');
+const moduloAnswer = document.getElementById('modulo-answer');
 
 addButton.addEventListener('click', () => {
     const value1 = Number(addInput1.value);
@@ -43,4 +47,11 @@ divideButton.addEventListener('click', () => {
   const value8 = Number(divideInput2.value);
   const divideResult = divide(value7, value8);
   divideAnswer.textContent = divideResult;
+});
+
+moduloButton.addEventListener('click', () => {
+  const value9 = Number(moduloInput1.value);
+  const value10 = Number(moduloInput2.value);
+  const moduloResult = modulo(value9, value10);
+  moduloAnswer.textContent = moduloResult;
 });

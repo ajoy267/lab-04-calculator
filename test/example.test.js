@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import {add_two, add, subtract, multiply, divide} from '../calculations.js';
+import {add_two, add, subtract, multiply, divide, modulo} from '../calculations.js';
 // import { example } from '../example.js';
 
 const test = QUnit.test;
@@ -163,4 +163,44 @@ test('Division function', (expect) => {
 
     //Assert
     expect.equal(actual, expected, 'Should divide 150 * 10');
+});
+
+//Modulo Calculator Test
+test('Modulo function', (expect) => {
+    //Arrange
+    const input1 = 11;
+    const input2 = 2;
+    const expected = 1;
+
+    //Act
+    const actual = modulo(input1, input2);
+
+    //Assert
+    expect.equal(actual, expected, 'Should modulo 11 % 2');
+});
+
+test('modulo function', (expect) => {
+    //Arrange
+    const input1 = 25;
+    const input2 = 4;
+    const expected = 1;
+
+    //Act
+    const actual = modulo(input1, input2);
+
+    //Assert
+    expect.equal(actual, expected, 'Should modulo 25 % 4');
+});
+
+test('modulo function', (expect) => {
+    //Arrange
+    const input1 = 30;
+    const input2 = 9;
+    const expected = 3;
+
+    //Act
+    const actual = modulo(input1, input2);
+
+    //Assert
+    expect.equal(actual, expected, 'Should modulo 30 % 9');
 });

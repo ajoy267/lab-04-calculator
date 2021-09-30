@@ -17,3 +17,7 @@ export function multiply(num5, num6){
 export function divide(num7, num8){
     return num7 / num8;
 }
+
+export function modulo(num9, num10){
+    return num9 % num10;
+}
