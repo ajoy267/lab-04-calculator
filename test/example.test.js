@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import {add_two, add, subtract} from '../calculations.js';
+import {add_two, add, subtract, multiply} from '../calculations.js';
 // import { example } from '../example.js';
 
 const test = QUnit.test;
@@ -83,4 +83,44 @@ test('Sub function', (expect) => {
 
     //Assert
     expect.equal(actual, expected, 'Should subtract 15 - 9');
+});
+
+//Multiplication Calculator Test
+test('Multiply function', (expect) => {
+    //Arrange
+    const input1 = 3;
+    const input2 = 2;
+    const expected = 6;
+
+    //Act
+    const actual = multiply(input1, input2);
+
+    //Assert
+    expect.equal(actual, expected, 'Should multiply 3 * 2');
+});
+
+test('Multiply function', (expect) => {
+    //Arrange
+    const input1 = 4;
+    const input2 = 6;
+    const expected = 24;
+
+    //Act
+    const actual = multiply(input1, input2);
+
+    //Assert
+    expect.equal(actual, expected, 'Should multiply 4 * 6');
+});
+
+test('Multiply function', (expect) => {
+    //Arrange
+    const input1 = 15;
+    const input2 = 9;
+    const expected = 135;
+
+    //Act
+    const actual = multiply(input1, input2);
+
+    //Assert
+    expect.equal(actual, expected, 'Should multiply 15 * 9');
 });
