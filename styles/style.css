@@ -1,3 +1,7 @@
+* {
+    background-color: black;
+    color: white;
+}
 main {
     margin: 20px;
     width: 100%;
@@ -7,10 +11,21 @@ main {
 
 .calculation {
     background-color: orange;
-    border: 1px solid black;
     padding: 20px;
+    color: black;
 }
 
 h1, h2 {
     font-family: 'Creepster', cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.calculation h2 {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
 }
