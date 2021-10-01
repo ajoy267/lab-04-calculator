@@ -1,4 +1,4 @@
-import {add, subtract, multiply, divide} from './calculations.js';
+import { add, subtract, multiply, divide, modulo } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -36,22 +36,22 @@ subButton.addEventListener('click', () => {
 });
 
 multiplyButton.addEventListener('click', () => {
-  const value5 = Number(multiplyInput1.value);
-  const value6 = Number(multiplyInput2.value);
-  const multiplyResult = multiply(value5, value6);
-  multiplyAnswer.textContent = multiplyResult;
+    const value5 = Number(multiplyInput1.value);
+    const value6 = Number(multiplyInput2.value);
+    const multiplyResult = multiply(value5, value6);
+    multiplyAnswer.textContent = multiplyResult;
 });
 
 divideButton.addEventListener('click', () => {
-  const value7 = Number(divideInput1.value);
-  const value8 = Number(divideInput2.value);
-  const divideResult = divide(value7, value8);
-  divideAnswer.textContent = divideResult;
+    const value7 = Number(divideInput1.value);
+    const value8 = Number(divideInput2.value);
+    const divideResult = divide(value7, value8);
+    divideAnswer.textContent = divideResult;
 });
 
 moduloButton.addEventListener('click', () => {
-  const value9 = Number(moduloInput1.value);
-  const value10 = Number(moduloInput2.value);
-  const moduloResult = modulo(value9, value10);
-  moduloAnswer.textContent = moduloResult;
+    const value9 = Number(moduloInput1.value);
+    const value10 = Number(moduloInput2.value);
+    const moduloResult = modulo(value9, value10);
+    moduloAnswer.textContent = moduloResult;
 });
